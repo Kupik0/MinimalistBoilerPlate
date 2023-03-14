@@ -15,9 +15,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
-builder.Services.AddDbContext<KaderKutusuDbContext>();
+builder.Services.AddDbContext<MinimalistBoilerPlateDbContext>();
 builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddDbContext<KaderKutusuDbContext>(options =>
+builder.Services.AddDbContext<MinimalistBoilerPlateDbContext>(options =>
 options.UseNpgsql(builder.Configuration.GetConnectionString("PostgreSql")));
 var app = builder.Build();
 

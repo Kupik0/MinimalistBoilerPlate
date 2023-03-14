@@ -9,6 +9,6 @@ namespace WebApi.Dto
         public string EPosta { get; set; }
         public string Adres { get; set; }
         public int SepetId { get; set; }
-        public Sepet? Sepet { get; set; }
+      
     }
 }

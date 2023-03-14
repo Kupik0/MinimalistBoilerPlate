@@ -10,10 +10,10 @@ namespace WebApi.EntityConfigurations
         public void Configure(EntityTypeBuilder<User> builder)
         {
             builder.HasKey(c => c.Id);
-            builder.ToTable("User", "KaderKutusu");
+            builder.ToTable("User", "MinimalistBoilerPlate");
             builder.HasData
                 (
-                new User { Id = 1,  AdSoyad = " Selda Bağcan" , Adres ="Konak mah. 312. Cd. 123. sk İzmir Türkiye", EPosta = "vurucusesselda@yahoo.com",  Sifre = "123456", Yas = "64"}
+                new User { Id = 1,  AdSoyad = " Mustafa Kupik" , Adres ="Minimalist Boiler Plate by null. tech", EPosta = "null@tech.com",  Sifre = "123456", Yas = "1"}
                 );
         }
     }

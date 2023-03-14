@@ -10,9 +10,9 @@ namespace WebApi.Services.Concrete
     {
         protected DbSet<User> user => dbContext.Set<User>();
 
-        private readonly KaderKutusuDbContext dbContext;
+        private readonly MinimalistBoilerPlateDbContext dbContext;
         private readonly IMapper mapper;
-        public UserService(KaderKutusuDbContext dbContext , IMapper mapper)
+        public UserService(MinimalistBoilerPlateDbContext dbContext , IMapper mapper)
         {
             this.dbContext = dbContext;
             this.mapper = mapper;
