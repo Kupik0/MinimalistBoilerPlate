@@ -24,5 +24,13 @@ namespace WebApi.Controllers
 
         }
 
+        [HttpPost]
+        [Route("Login")]
+        public async Task<IActionResult> Login([FromBody] UserLogin user)
+        {
+            var res = await _user.UserLogin(user);
+
+            return Ok(res);
+        }
     }
 }
